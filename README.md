@@ -291,42 +291,9 @@ Target: 1500.0 RPM | Actual: 1462.0 RPM | PWM: 45.0 %
 Target: 1500.0 RPM | Actual: 1490.0 RPM | PWM: 43.0 %
 ```
 
-*The values above are illustrative examples of the output format, not measured experimental results.*
-
 This allows the user to monitor the target speed, actual speed, and controller output through a serial terminal.
 
-## 10. Repository Structure
-
-```text
-STM32-PID-Motor-Controller/
-│
-├── Core/
-│   ├── Inc/
-│   │   ├── main.h
-│   │   ├── pid.h
-│   │   └── motor_control.h
-│   │
-│   └── Src/
-│       ├── main.c
-│       ├── pid.c
-│       └── motor_control.c
-│
-├── Drivers/
-│   └── STM32F4xx_HAL_Driver/
-│
-├── screenshots/
-│   └── Add project screenshots here
-│
-├── documentation/
-│   └── Add wiring diagrams and technical documentation here
-│
-├── README.md
-└── LICENSE
-```
-
-*The structure above is a suggested organization. Retain the STM32CubeIDE-generated project files and directories required to build the firmware.*
-
-## 11. How to Build and Run
+## 10. How to Build and Run
 
 1. Clone or download this repository.
 2. Open STM32CubeIDE.
@@ -343,7 +310,7 @@ STM32-PID-Motor-Controller/
 
 Before connecting the motor, verify the PWM output and motor-driver wiring. Start with a low PWM command and an appropriate current-limited power supply.
 
-## 12. Important Configuration Notes
+## 11. Important Configuration Notes
 
 Before using the firmware with a real motor, verify the following:
 
@@ -354,7 +321,7 @@ Before using the firmware with a real motor, verify the following:
 - **PWM frequency:** Confirm that 10 kHz is suitable for the selected motor driver.
 - **Control-loop timing:** Keep the PID sampling period consistent with the actual TIM6 interrupt frequency.
 
-## 13. Future Improvements
+## 12. Future Improvements
 
 Potential extensions for future versions include:
 
@@ -368,7 +335,7 @@ Potential extensions for future versions include:
 - Real-time RPM visualization using a PC monitoring interface.
 - Integration with FreeRTOS for multitasking applications.
 
-## 14. Skills Demonstrated
+## 13. Skills Demonstrated
 
 This project demonstrates practical knowledge of:
 
@@ -385,7 +352,7 @@ This project demonstrates practical knowledge of:
 - Modular firmware development.
 - Real-time embedded control systems.
 
-## 15. Author
+## 14. Author
 
 **Embedded Systems / Firmware Development Portfolio**
 
