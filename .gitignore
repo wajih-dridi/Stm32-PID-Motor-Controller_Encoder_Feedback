@@ -1,0 +1,9 @@
+Debug/
+Release/
+.settings/language.settings.xml
+*.launch
+*.elf
+*.hex
+*.bin
+*.map
+*.list
